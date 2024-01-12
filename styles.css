@@ -1,0 +1,108 @@
+:root {
+	box-sizing: border-box;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	height: 100vh;
+	background-color: #f9fafb;
+}
+
+#logo-section {
+	flex-basis: 30%;
+	display: flex;
+	position: relative;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('static/Norse-Bold.otf') format('opentype');
+}
+
+#logo-section > div {
+	position: absolute;
+	top: 8rem;
+	font-family: 'Norse-Bold', sans-serif;
+	font-size: 8rem;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+#logo-section > div > img {
+	width: 20%;
+}
+
+#logo-section > img {
+	object-fit: cover;
+}
+
+#form-section {
+	flex-basis: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+#form-section label {
+	color: gray;
+}
+
+#form-section > form {
+	display: flex;
+	flex-direction: column;
+}
+
+#form-section > div {
+	display: flex;
+	flex-direction: column;
+	padding: 4%;
+}
+
+#form-section > div > h1 {
+	margin: 0;
+}
+
+#form-section > form > div:first-child {
+	background-color: white;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+#form-section > form > div > div {
+	display: flex;
+	margin-bottom: 1%;
+}
+
+#form-section > form > div > div > div {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+	margin-right: 12%;
+}
+
+.error {
+	color: red;	
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+#form-section > form > div:nth-child(2) {
+	margin-top: 20px;
+	margin-left: 4%; 
+}
+
+#form-section > form > div:nth-child(2) > input {
+	padding: 10px 30px 10px 30px;
+	background-color: #596D48;
+	color: white;
+}
